@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<!--    font-->
+    <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
+
+<!--    Jquery CDN-->
+    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+    
+<!--    main app-->
+    <script src="pomodoro.js"></script>
+    
+<!--    date library-->
+    <script src="date.js"></script>
+    
+    <title>Pomodoro Clock</title>
+    
+<!--    bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mainstyles.css">
+ 
+</head>
+    
+<body>
+    <audio id="breakAudio">
+      <source src="break.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="sessionAudio">
+      <source src="start.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+<!--    The main content-->
+    <div>
+        <h1 class="text-center" style="font-size: 65px">Pomodoro Clock</h1>
+    </div>
+
+    <header class="text-center">
+        <div class="header">
+            <p class="text-center" style="text-transform: uppercase;">Break Length</p>
+            <button id="breakSubtract">-</button><span id="breakNum">5</span><button id="breakAdd">+</button>
+        </div>
+
+        <div class="header">
+            <p class="text-center" style="text-transform: uppercase;">Session Length</p>
+            <button id="subtractSession">-</button><span id="sessionNum">25</span><button id="plusSession">+</button>
+        </div>
+    </header>
+
+    <div>
+<!--        Circle-->
+        <canvas class="center-block" id="circleCanvas" width="500" height="320">No HTML5 support</canvas>
+    </div>
+    
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Created by Swainson Holness version 1.0.0</p>
+      </div>
+    </footer>
+</body>
+    
+</html>

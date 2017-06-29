@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Exo:100';
+    src: url('https://fonts.googleapis.com/css?family=Exo:100');
+}
+
+body {
+    background-color: #282828;
+    color: white;
+    font-family: 'Exo', sans-serif;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-size: 20px;
+    padding: 0px 12px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.header {
+    display: inline-block;
+    margin: 50px 10px 10px 10px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: none;
+
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+
