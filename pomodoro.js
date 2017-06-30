@@ -20,7 +20,7 @@ $(document).ready(function(){
         
         //layer 0 Loading circle
         ctx.beginPath();
-        ctx.arc(250,160,140,2*Math.PI,0*Math.PI);
+        ctx.arc(150,160,140,2*Math.PI,0*Math.PI);
         ctx.stroke();
         ctx.fillStyle=color;
         ctx.fill();
@@ -33,7 +33,7 @@ $(document).ready(function(){
         
         //layer 2 Ring circle
         ctx.beginPath();
-        ctx.arc(250,160,150,0*Math.PI,2*Math.PI);
+        ctx.arc(150,160,150,0*Math.PI,2*Math.PI);
         ctx.strokeStyle=ring;
         ctx.stroke();
         
@@ -41,13 +41,13 @@ $(document).ready(function(){
         ctx.font = "50px Helvetica";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
-        ctx.fillText(num,250,225);
+        ctx.fillText(num,150,225);
         
         //layer 4 font "timer"
         ctx.font = "100 50px Helvetica";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
-        ctx.fillText(session,250,125);
+        ctx.fillText(session,150,125);
         
         //Main functionality of the program
     }
