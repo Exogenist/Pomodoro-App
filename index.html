@@ -3,28 +3,30 @@
 <meta charset='UTF-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+
 <head>
-<!--    font-->
+    <!--    font-->
     <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
 
-<!--    Jquery CDN-->
-    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
-    
-<!--    main app-->
+    <!--    Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+
+    <!--    main app-->
     <script src="pomodoro.js"></script>
-    
-<!--    date library-->
+
+    <!--    date library-->
     <script src="date.js"></script>
-    
+
     <title>Pomodoro Clock</title>
-    
-<!--    bootstrap-->
+
+    <!--    bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="mainstyles.css">
- 
+
 </head>
-    
+
 <body>
     <audio id="breakAudio">
       <source src="break.mp3" type="audio/mpeg">
@@ -35,33 +37,38 @@
       Your browser does not support the audio element.
     </audio>
 
-<!--    The main content-->
-    <div>
+    <!--    The main content-->
+    <div class="container">
         <h1 class="text-center" style="font-size: 65px">Pomodoro Clock</h1>
     </div>
 
     <header class="text-center">
         <div class="header">
             <p class="text-center" style="text-transform: uppercase;">Break Length</p>
-            <button id="breakSubtract">-</button><span id="breakNum">5</span><button id="breakAdd">+</button>
+            <button id="breakSubtract" class="scale">-</button><span id="breakNum">5</span><button id="breakAdd" class="scale">+</button>
         </div>
 
         <div class="header">
             <p class="text-center" style="text-transform: uppercase;">Session Length</p>
-            <button id="subtractSession">-</button><span id="sessionNum">25</span><button id="plusSession">+</button>
+            <button id="subtractSession" class="scale">-</button><span id="sessionNum">25</span><button id="plusSession" class="scale">+</button>
         </div>
     </header>
 
-    <div>
-<!--        Circle-->
-        <canvas class="center-block" id="circleCanvas" width="500" height="320">No HTML5 support</canvas>
+    <div class="">
+        <!--        Circle-->
+        <canvas class="center-block" id="circleCanvas" width="300" height="320">No HTML5 support</canvas>
     </div>
-    
+
     <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Created by Swainson Holness version 1.0.0</p>
-      </div>
+        <div class="container">
+            <p class="text-muted">Created by Swainson Holness version 1.0.1</p>
+        </div>
     </footer>
+
+
+    <!-- bootstrap js -->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
 </body>
-    
+
 </html>
