@@ -1,4 +1,4 @@
-//Created by Swainson Holness version 1.0.0
+//Created by Swainson Holness version 1.0.1
 
 $(document).ready(function(){
     var ring = "red";
