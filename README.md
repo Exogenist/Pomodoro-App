@@ -3,7 +3,7 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 Use this app to set your own pomodoro and break interval!
 
-# TO DO:
+## TO DO:
 - [ ] Add simple task manager feature. Synthesis pomodoro with 
 - [ ] Port it to REACT.js framework. 
 - [ ] Convert to svg vs canvas. The graphics on canvas is not smooth.
